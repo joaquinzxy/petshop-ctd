@@ -1,0 +1,292 @@
+*{
+    margin: 0; /* se sacan los margenes por defecto del navegador, asi se empieza desde 0 */
+    font-family: Roboto;
+}
+
+#barra-superior{
+    background-color: black;
+    color: white; /* color de la fuente */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+#barra-superior button{
+    margin: 0;
+    background-color: black;
+}
+
+header{
+    background-color: #F0A83E;
+    height: 15vh; /* unidad de medida que toma como referencia el tamaño de la pantalla 100vh sería el 100% de la pantalla (vertical height) */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 50px;
+}
+
+header #logo-header{
+    width: 30%;
+}
+
+
+header nav{
+    width: 70%;
+    text-align: right;
+}
+
+header nav img{
+    width: 80%;
+}
+
+header a{
+    text-decoration: none; /* sacar el subrayado de los enlaces*/
+    color: white;
+}
+
+header a svg{ /* iconos incrustados en el nav*/
+    height: 15px;
+    fill: white;
+    margin: 0 5px;
+}
+
+ul{
+    list-style: none; /* sacar los puntos de la lista*/
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 20px;
+}
+
+#hero-banner{
+    background-image: url('img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    height: 50vh; /* unidad de medida, explicado en la etiqueta HEADER más arriba*/
+    text-align: right;
+    padding: 100px;
+}
+
+#galeria-producto{
+    text-align: center;
+    padding: 100px;
+}
+
+h3{
+    color: #3C2313;
+    font-weight: 700;
+    font-size: 40px;
+    width: auto;
+}
+
+#galeria-producto li{
+    display: inline; /* Muestra los elementos de la lista de forma horizontal  */
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+
+}
+
+#galeria-producto ul{
+    padding: 0;
+}
+
+#galeria-producto a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#contenedor-productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.producto{
+    width: 20%;
+    min-width: 250px;
+    cursor: pointer; /* cambia el cursor cuando ponemos el mouse arriba, le pone la manito simulando que fuera un link*/
+}
+
+.producto img{
+    width: 100%;
+}
+
+.producto .producto-titulo{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    color: #3C2313;
+}
+
+.producto .producto-precio{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    color: #F0A83E;
+}
+
+#formulario-contacto{
+    text-align: center;
+    padding:50px 0;
+}
+
+#formulario-contacto .contenedor-input{
+    text-align: center; 
+}
+
+#formulario-contacto input{
+    display: block;  /* obliga al elemento (cajita de ingreso de datos) a mostrarse en bloque, o sea que ocupa todo el ancho y el resto debe ubicarse abajo */
+    margin: 10px auto; /* margen de 10px arriba y abajo - y a la izquierda y derecha se reparte el espacio, asi se queda centrado*/
+    border: none;
+    background-color: #3C2313;
+    padding: 20px 40px;
+    border-radius: 15px;
+    width: 30%;
+    color: white;
+}
+
+#formulario-contacto input::placeholder{
+    color: white;
+}
+
+button{
+    border-radius: 15px; /* esquinas redondeadas*/
+    margin: 20px; /* espacio externo del boton*/ 
+    padding: 10px 20px;  /* espacio interno del boton, da más aire digamos al texto*/
+    border: none; /* se saca el borde por defecto del boton*/
+    color: white; 
+}
+
+.boton-naranja{
+    background-color: #F0A83E;
+}
+
+.boton-gris{
+    background-color: #666666;
+}
+
+#newsletter{
+    background-color: #F0A83E;
+    color: white;
+    min-height: 10vh;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* 
+
+ARREGLADO CON FLEXBOX
+
+#newsletter > *{   dentro del div newsletter, aplica una propiedad a TODOS (*) los hijos inmediatos (los "nietos" ya no, solo hijos)
+    display: inline;
+}
+
+*/
+
+#newsletter .correo-boton-grupo{
+    display: flex;
+    flex-direction: row;
+    min-width: 50%;
+    flex-wrap: wrap;
+}
+
+#newsletter h4{
+    margin-right: 200px;
+    font-size: 22px;
+}
+
+#newsletter input{
+    display: block;  /* obliga al elemento (cajita de ingreso de datos) a mostrarse en bloque, o sea que ocupa todo el ancho y el resto debe ubicarse abajo */
+    margin: 10px auto; /* margen de 10px arriba y abajo - y a la izquierda y derecha se reparte el espacio, asi se queda centrado*/
+    border: none;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 15px;
+    width: 50%;
+    color: black;
+}
+
+footer{
+    background-color: #3C2313;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logo-sociales{
+    padding: 50px;
+}
+
+footer h6{
+font-family: Roboto;
+font-size: 20px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+footer .info-contacto{
+    padding: 50px 100px;
+}
+
+footer .forma-contacto{
+    margin: 10px 0;
+}
+
+footer .info p{
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#8A8787;
+}
+
+.forma-contacto img{
+    width: 50px;
+    vertical-align: middle;
+}
+
+.forma-contacto .info{
+    vertical-align:middle; /* alinea un elemento de forma vertical*/
+}
+
+.forma-contacto > *{
+    display: inline-block;
+}
+
+.derechos-reservados{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

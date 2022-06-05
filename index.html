@@ -5,23 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase 6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div id="barra-superior">
-            <h4>Grandes ofertas en comederos</h4>
+    <div id="barra-superior">
+        <h4>Grandes ofertas en comederos</h4>
+        <div class="botones-barra">
             <button>Español</button>
             <button>ARG$</button>
         </div>
+    </div>
+    <header>
         <div id="logo-header">
-            <img src="" alt="">
+            <img src="img/Logo.png" alt="">
         </div>
         <nav>
             <ul>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Pets</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contactanos</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 224c-79.37 0-191.1 122.7-191.1 200.2C64.02 459.1 90.76 480 135.8 480C184.6 480 216.9 454.9 256 454.9C295.5 454.9 327.9 480 376.2 480c44.1 0 71.74-20.88 71.74-55.75C447.1 346.8 335.4 224 256 224zM108.8 211.4c-10.37-34.62-42.5-57.12-71.62-50.12S-7.104 202 3.27 236.6C13.64 271.3 45.77 293.8 74.89 286.8S119.1 246 108.8 211.4zM193.5 190.6c30.87-8.125 46.37-49.1 34.5-93.37s-46.5-71.1-77.49-63.87c-30.87 8.125-46.37 49.1-34.5 93.37C127.9 170.1 162.5 198.8 193.5 190.6zM474.9 161.3c-29.12-6.1-61.25 15.5-71.62 50.12c-10.37 34.63 4.75 68.37 33.87 75.37c29.12 6.1 61.12-15.5 71.62-50.12C519.1 202 503.1 168.3 474.9 161.3zM318.5 190.6c30.1 8.125 65.62-20.5 77.49-63.87c11.87-43.37-3.625-85.25-34.5-93.37c-30.1-8.125-65.62 20.5-77.49 63.87C272.1 140.6 287.6 182.5 318.5 190.6z"/></svg>Categorías</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 224c-79.37 0-191.1 122.7-191.1 200.2C64.02 459.1 90.76 480 135.8 480C184.6 480 216.9 454.9 256 454.9C295.5 454.9 327.9 480 376.2 480c44.1 0 71.74-20.88 71.74-55.75C447.1 346.8 335.4 224 256 224zM108.8 211.4c-10.37-34.62-42.5-57.12-71.62-50.12S-7.104 202 3.27 236.6C13.64 271.3 45.77 293.8 74.89 286.8S119.1 246 108.8 211.4zM193.5 190.6c30.87-8.125 46.37-49.1 34.5-93.37s-46.5-71.1-77.49-63.87c-30.87 8.125-46.37 49.1-34.5 93.37C127.9 170.1 162.5 198.8 193.5 190.6zM474.9 161.3c-29.12-6.1-61.25 15.5-71.62 50.12c-10.37 34.63 4.75 68.37 33.87 75.37c29.12 6.1 61.12-15.5 71.62-50.12C519.1 202 503.1 168.3 474.9 161.3zM318.5 190.6c30.1 8.125 65.62-20.5 77.49-63.87c11.87-43.37-3.625-85.25-34.5-93.37c-30.1-8.125-65.62 20.5-77.49 63.87C272.1 140.6 287.6 182.5 318.5 190.6z"/></svg>Pets</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 224c-79.37 0-191.1 122.7-191.1 200.2C64.02 459.1 90.76 480 135.8 480C184.6 480 216.9 454.9 256 454.9C295.5 454.9 327.9 480 376.2 480c44.1 0 71.74-20.88 71.74-55.75C447.1 346.8 335.4 224 256 224zM108.8 211.4c-10.37-34.62-42.5-57.12-71.62-50.12S-7.104 202 3.27 236.6C13.64 271.3 45.77 293.8 74.89 286.8S119.1 246 108.8 211.4zM193.5 190.6c30.87-8.125 46.37-49.1 34.5-93.37s-46.5-71.1-77.49-63.87c-30.87 8.125-46.37 49.1-34.5 93.37C127.9 170.1 162.5 198.8 193.5 190.6zM474.9 161.3c-29.12-6.1-61.25 15.5-71.62 50.12c-10.37 34.63 4.75 68.37 33.87 75.37c29.12 6.1 61.12-15.5 71.62-50.12C519.1 202 503.1 168.3 474.9 161.3zM318.5 190.6c30.1 8.125 65.62-20.5 77.49-63.87c11.87-43.37-3.625-85.25-34.5-93.37c-30.1-8.125-65.62 20.5-77.49 63.87C272.1 140.6 287.6 182.5 318.5 190.6z"/></svg>Nosotros</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 224c-79.37 0-191.1 122.7-191.1 200.2C64.02 459.1 90.76 480 135.8 480C184.6 480 216.9 454.9 256 454.9C295.5 454.9 327.9 480 376.2 480c44.1 0 71.74-20.88 71.74-55.75C447.1 346.8 335.4 224 256 224zM108.8 211.4c-10.37-34.62-42.5-57.12-71.62-50.12S-7.104 202 3.27 236.6C13.64 271.3 45.77 293.8 74.89 286.8S119.1 246 108.8 211.4zM193.5 190.6c30.87-8.125 46.37-49.1 34.5-93.37s-46.5-71.1-77.49-63.87c-30.87 8.125-46.37 49.1-34.5 93.37C127.9 170.1 162.5 198.8 193.5 190.6zM474.9 161.3c-29.12-6.1-61.25 15.5-71.62 50.12c-10.37 34.63 4.75 68.37 33.87 75.37c29.12 6.1 61.12-15.5 71.62-50.12C519.1 202 503.1 168.3 474.9 161.3zM318.5 190.6c30.1 8.125 65.62-20.5 77.49-63.87c11.87-43.37-3.625-85.25-34.5-93.37c-30.1-8.125-65.62 20.5-77.49 63.87C272.1 140.6 287.6 182.5 318.5 190.6z"/></svg>Contactanos</a></li>
             </ul>
         </nav>
     </header>
@@ -32,79 +37,85 @@
             <div>
                 <h3>Es un placer tenerte aquí!</h3>
                 <h4>Comederos en descuento!</h4>
-                <button>COMEDEROS</button>
+                <button class="boton-naranja">COMEDEROS</button>
             </div>
         </section>
 
         <section id="galeria-producto">
-            <img src="#" class="icono-encabezado" alt="">
+            <img src="img/huella.png" class="icono-encabezado" alt="">
             <h3>Productos Destacados</h3>
             <ul>
-                <li><a href="#">Comederos</a></li>
-                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Comederos   -   </a></li>
+                <li><a href="#">Accesorios   -   </a></li>
                 <li><a href="#">Comida</a></li>
             </ul>
             <div id="contenedor-productos">
                 <div class="producto">
-                    <img src="" alt="" class="producto-imagen">
+                    <img src="img/churrasquito.png" alt="" class="producto-imagen">
                     <p class="producto-titulo">Juguete Churrasquito</p>
-                    <p class="producto-">$150</p>
+                    <p class="producto-precio">$150</p>
                 </div>
                 <div class="producto">
-                    <img src="" alt="" class="producto-imagen">
+                    <img src="img/comedero.png" alt="" class="producto-imagen">
                     <p class="producto-titulo">Comedero para perro</p>
-                    <p class="producto-">$250</p>
+                    <p class="producto-precio">$250</p>
                 </div>
                 <div class="producto">
-                    <img src="" alt="" class="producto-imagen">
+                    <img src="img/Huesito.png" alt="" class="producto-imagen">
                     <p class="producto-titulo">Juguete Huesito</p>
-                    <p class="producto-">$650</p>
+                    <p class="producto-precio">$650</p>
                 </div>
             </div>
         </section>
 
         <section id="formulario-contacto">
             <h3>Contactanos</h3>
-            <form action="">
-            
-            </form>
-            <button>Resetear</button>
-            <button>Enviar</button>
+            <div class="contenedor-input">
+                <input type="text" name="nombre" placeholder="Nombre y apellido">
+                <input type="text" placeholder="Ingresa tu correo">
+                <input type="text" placeholder="Telefono">
+            </div>
+            <button class="boton-gris">Resetear</button>
+            <button class="boton-naranja">Enviar</button>
         </section>
 
         <section id="newsletter">
             <img src="" alt="">
             <h4>Suscribete para más novedades</h4>
-            <input type="text" placeholder="Ingresa tu correo electrónico">
-            <button>Suscribirme</button>
+            <div class="correo-boton-grupo">
+                <input type="text" placeholder="Ingresa tu correo electrónico">
+                <button class="boton-gris">Suscribirme</button>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="info-contacto">
             <div class="forma-contacto">
-                <img src="" alt="">
+                <img src="img/Icono.png" alt="">
                 <div class="info">
                     <h6>Localidad</h6>
                     <p>Calle - provincia</p>
                 </div>
             </div>
             <div class="forma-contacto">
-                <img src="" alt="">
+                <img src="img/Icono.png" alt="">
                 <div class="info">
                     <h6>Teléfono</h6>
                     <p>Número de teléfono</p>
                 </div>
             </div>
             <div class="forma-contacto">
-                <img src="" alt="">
+                <img src="img/Icono.png" alt="">
                 <div class="info">
                     <h6>Correo Electrónico</h6>
                     <p>Dirección de Correo Electrónico</p>
                 </div>
             </div>
         </div>
-        <img src="" alt="">
+        <div class="logo-sociales">
+            <img src="img/Logo-white.png" alt="">
+        </div>
         <div class="derechos-reservados">
             <p>Todos los derechos reservados.</p>
         </div>
