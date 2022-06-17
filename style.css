@@ -38,6 +38,8 @@ header nav{
     text-align: right;
 }
 
+
+
 header nav img{
     width: 80%;
 }
@@ -45,6 +47,10 @@ header nav img{
 header a{
     text-decoration: none; /* sacar el subrayado de los enlaces*/
     color: white;
+}
+
+header a.activo{
+    border-bottom: 3px solid white;
 }
 
 header a svg{ /* iconos incrustados en el nav*/
@@ -247,6 +253,10 @@ font-weight: 700;
 line-height: 23px;
 letter-spacing: 0em;
 text-align: left;
+}
+
+.destacado{
+
 }
 
 footer .info-contacto{
