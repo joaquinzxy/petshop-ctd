@@ -1,6 +1,7 @@
 *{
     margin: 0; /* se sacan los margenes por defecto del navegador, asi se empieza desde 0 */
     font-family: Roboto;
+    font-size: 16px;
 }
 
 #barra-superior{
@@ -11,8 +12,36 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
 }
+
+
+.desplegarMenu {
+    display: none;
+}
+
+
+@media (max-width:768px) {
+
+    #barra-superior {
+        display: none;
+
+    }
+
+    header nav {
+        display: none;
+        
+    }
+
+    
+    .desplegarMenu {
+        display:block;
+    }
+
+    #hero-banner h3{
+        font-size: 1.5625rem ;
+    }
+}
+
 
 #barra-superior button{
     margin: 0;
@@ -23,7 +52,7 @@ header{
     background-color: #F0A83E;
     height: 15vh; /* unidad de medida que toma como referencia el tamaño de la pantalla 100vh sería el 100% de la pantalla (vertical height) */
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 0 50px;
 }
@@ -69,18 +98,41 @@ nav ul li{
 }
 
 #hero-banner{
+    display: flex;
     background-image: url('img/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: fit-content;
-    height: 50vh; /* unidad de medida, explicado en la etiqueta HEADER más arriba*/
+    min-height: 50vh; /* unidad de medida, explicado en la etiqueta HEADER más arriba*/
     text-align: right;
-    padding: 100px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#hero-banner h3 {
+    display: inline;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+#hero-banner div {
+    margin: 10px;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+}
+
+#hero-banner div>* {
+    margin: 6px;
+    font-weight: 400;
 }
 
 #galeria-producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 100px;
 }
 
 h3{
@@ -99,9 +151,19 @@ h3{
 
 }
 
-#galeria-producto ul{
+#galeria-producto ul {
     padding: 0;
 }
+
+
+#galeria-producto ul li{
+    padding: 11.5px;
+}
+
+#galeria-producto h3 {
+    width: 80%;
+}
+
 
 #galeria-producto a{
     text-decoration: none;
@@ -112,10 +174,10 @@ h3{
 
 #contenedor-productos{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
+    width: 100%;
 }
 
 .producto{
@@ -171,7 +233,7 @@ h3{
 }
 
 button{
-    border-radius: 15px; /* esquinas redondeadas*/
+    border-radius: 5px; /* esquinas redondeadas*/
     margin: 20px; /* espacio externo del boton*/ 
     padding: 10px 20px;  /* espacio interno del boton, da más aire digamos al texto*/
     border: none; /* se saca el borde por defecto del boton*/
@@ -190,7 +252,6 @@ button{
     background-color: #F0A83E;
     color: white;
     min-height: 10vh;
-    padding: 50px;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -226,7 +287,6 @@ ARREGLADO CON FLEXBOX
     margin: 10px auto; /* margen de 10px arriba y abajo - y a la izquierda y derecha se reparte el espacio, asi se queda centrado*/
     border: none;
     background-color: #fff;
-    padding: 20px 40px;
     border-radius: 15px;
     width: 50%;
     color: black;
@@ -260,7 +320,7 @@ text-align: left;
 }
 
 footer .info-contacto{
-    padding: 50px 100px;
+
 }
 
 footer .forma-contacto{
